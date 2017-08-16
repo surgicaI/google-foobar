@@ -1,6 +1,7 @@
 ```
 Minion Labor Shifts
 ===================
+Time to solve: 48 hours.
 
 Commander Lambda's minions are upset! They're given the worst jobs on the whole space station, and some of them are starting to complain that even those worst jobs are being allocated unfairly. If you can fix this problem, it'll prove your chops to Commander Lambda so you can get promoted!
 
