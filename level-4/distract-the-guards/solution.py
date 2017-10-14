@@ -1,7 +1,7 @@
 max_count = 0
 def answer(banana_list):
     if len(banana_list) < 2:
-        return 0
+        return len(banana_list)
     graph = [[] for _ in banana_list]
     for index, a in enumerate(banana_list):
         for j in range(index, len(banana_list)):
@@ -53,13 +53,12 @@ def traverse(graph, index, seen, count):
             max_count = max(max_count, count)
             count -= 1
 
-l = [1,2,3,4,5,6,7,8,9]
-print(answer(l))
-# for i, a in enumerate(l):
-#     for j in range(i+1, len(l)):
-#         b = l[j]
-#         if b > a:
-#             a, b = b, a
-#         print(a, b, isTrickyPair(a, b))
-#
-# # print(isTrickyPair(7, 1))
+l = [
+        [1,1],
+        [1,2,3,4,5,6,7,8,9],
+        [7,76,75,95,8,85,6,876,56,78,64,78,4,7857,4,657],
+        [7659,674,78,54,7,573,314,87,986,56,452,231,78,89,93,53,42,363,34],
+        [567,7456,768,5,23,657,86,54,897,4,5643,32,645,76,543,567,43,7,6,345]
+    ]
+for i in l:
+    print(answer(i))
